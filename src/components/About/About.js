@@ -14,7 +14,7 @@ export default function About() {
           style={{ borderWidth: "1rem", overflow: "hidden" }}
         ></div>
       </div>
-      <div className={styles.aboutContainer}>
+      <div className={styles.textContainer}>
         <h1 className={styles.aboutHeader}>ABOUT ME</h1>
         <h1 className={styles.aboutBody}>
           I am a highly skilled full stack developer with a demonstrated history
