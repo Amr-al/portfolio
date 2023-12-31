@@ -1,15 +1,21 @@
-import React from "react";
-import { FaPhone } from "react-icons/fa6";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaLinkedin } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { BiLogoGmail } from "react-icons/bi";
 import { styles } from "./contactStyle";
-
+import Aos from "aos";
+import "aos/dist/aos.css";
 export default function () {
+  useEffect(() => {
+    Aos.init({
+      duration: 2000,
+      delay: 0,
+    });
+  }, []);
   return (
     <div className={styles.contactContainer} id="contact">
-      <div className={styles.leftSideContainer}>
+      <div className={styles.leftSideContainer} data-aos="fade-right">
         <h1 className={styles.header}>Get in touch</h1>
         <h1 className={styles.secondHeader}>Get in touch with me on:</h1>
         <Link
@@ -42,7 +48,7 @@ export default function () {
           <h1 className={styles.description}> Amr Mohamed</h1>
         </Link>
       </div>
-      <div className={styles.rightSideContainer}>
+      <div className={styles.rightSideContainer} data-aos="fade-left">
         <input
           type="text"
           name="price"
