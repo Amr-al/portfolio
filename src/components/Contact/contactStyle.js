@@ -1,6 +1,6 @@
 exports.styles = {
   contactContainer:
-    "h-fit bg-gradient-to-tl from-slate-800 pt-10 to-slate-900 flex flex-row flex-wrap justify-center md:justify-between pb-10",
+    "h-fit bg-gradient-to-tl from-slate-800 pt-10 to-slate-900 flex flex-row flex-wrap justify-center md:justify-between pb-10 max-w-full overflow-hidden",
   leftSideContainer: "md:p-16 flex flex-col justify-center md:justify-start",
   header: "text-white text-4xl pl-4 font-semibold font-serif",
   secondHeader: "text-white text-xl pl-4 font-semibold font-serif mt-12",

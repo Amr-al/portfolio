@@ -1,5 +1,5 @@
 exports.styles = {
-    aboutContainer:"w-full bg-slate-900 h-fit md:h-screen flex flex-col md:flex-row flex-wrap justify-center  pt-20 ",
+    aboutContainer:"overflow-hidden max-w-full w-full bg-slate-900 h-fit md:h-screen flex flex-col md:flex-row flex-wrap justify-center pt-20 ",
     imageContainer:"relative z-10 w-[50%] sm:w-[35%] mx-auto",
     image:"absolute rounded-xl w-[100%]  h-80 md:h-[70%] md:w-[70%] ",
     border:" border-cyan-500 rounded-lg  ml-10 mt-10  h-80 w-[100%] md:h-[70%] md:w-[70%] top-7 left-8 z-0 overflow-hidden",
