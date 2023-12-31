@@ -3,7 +3,7 @@ exports.styles = {
     imageContainer:"relative z-10 w-[50%] sm:w-[35%] mx-auto",
     image:"absolute rounded-xl w-[100%]  h-80 md:h-[70%] md:w-[70%] ",
     border:" border-cyan-500 rounded-lg  ml-10 mt-10  h-80 w-[100%] md:h-[70%] md:w-[70%] top-7 left-8 z-0 overflow-hidden",
-    textContainer:"flex flex-col md:justify-start md:items-start justify-center md:w-[50%] pt-9",
+    textContainer:"flex flex-col md:justify-start md:items-start justify-center md:w-[50%] pt-9 pr-5",
     aboutHeader:"text-white text-5xl font-semibold font-serif pt-11 md:text-start text-center",
     aboutBody:"text-gray-500 text-wrap mt-5 text-xl font-serif font-medium md:text-start text-center",
     btnsContainer:"flex flex-row md:justify-start justify-center",
