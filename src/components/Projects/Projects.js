@@ -26,7 +26,7 @@ export default function Projects() {
     },
   };
   return (
-    <div className="h-screen bg-slate-900">
+    <div className="h-screen bg-slate-900" id="projects">
       <div className={styles.header}>
         PROJECTS
       </div>

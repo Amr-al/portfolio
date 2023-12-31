@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import { styles } from "./aboutStyles";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-scroll";
+
 export default function About() {
   useEffect(() => {
     Aos.init({
@@ -10,8 +12,8 @@ export default function About() {
     });
   }, []);
   return (
-    <div className={styles.aboutContainer}  data-aos="fade-right">
-      <div className={styles.imageContainer}>
+    <div className={styles.aboutContainer} id="about">
+      <div className={styles.imageContainer} data-aos="fade-right">
         <img
           src="https://res.cloudinary.com/dbymvhk8x/image/upload/v1703945042/4_6_cyf3ad.jpg"
           className={styles.image}
@@ -21,7 +23,7 @@ export default function About() {
           style={{ borderWidth: "1rem", overflow: "hidden" }}
         ></div>
       </div>
-      <div className={styles.textContainer}>
+      <div className={styles.textContainer} data-aos="fade-left">
         <h1 className={styles.aboutHeader}>ABOUT ME</h1>
         <h1 className={styles.aboutBody}>
           I am a highly skilled full stack developer with a demonstrated history
@@ -33,10 +35,19 @@ export default function About() {
           in this domain.
         </h1>
         <div className={styles.btnsContainer}>
-          <button type="button" className={styles.hireBtn}>
-            Hire me
-          </button>
-          <button type="button" class={styles.resumeBtn}>
+          <Link to="contact" smooth={true} offset={10} duration={1000}>
+            <button type="button" className={styles.hireBtn}>
+              Hire me
+            </button>
+          </Link>
+          <button
+            type="button"
+            class={styles.resumeBtn}
+            onClick={() => {
+              window.location =
+                "https://drive.google.com/file/d/1kLa83saZ2qJ21DcbDCWFr50TjfKiIQQp/view?usp=sharing";
+            }}
+          >
             Resume
           </button>
         </div>

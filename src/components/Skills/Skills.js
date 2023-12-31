@@ -10,9 +10,9 @@ export default function Skills() {
     });
   }, []);
   return (
-    <div className={styles.container} data-aos="fade-left">
+    <div className={styles.container}  id="skills">
       <h1 className={styles.header}> SKILLS</h1>
-      <div className={styles.imgsContainer}>
+      <div className={styles.imgsContainer} data-aos="fade-left">
         <div className={styles.cardContainer}>
           <img
             src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"

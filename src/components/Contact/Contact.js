@@ -8,7 +8,7 @@ import { styles } from "./contactStyle";
 
 export default function () {
   return (
-    <div className={styles.contactContainer}>
+    <div className={styles.contactContainer} id="contact">
       <div className={styles.leftSideContainer}>
         <h1 className={styles.header}>Get in touch</h1>
         <h1 className={styles.secondHeader}>Get in touch with me on:</h1>
