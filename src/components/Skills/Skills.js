@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { styles } from "./skillsStyle";
-
+import Aos from "aos";
+import "aos/dist/aos.css";
 export default function Skills() {
+  useEffect(() => {
+    Aos.init({
+      duration: 2000,
+      delay: 0,
+    });
+  }, []);
   return (
-    <div className={styles.container}>
-      <h1 className={styles.header}>
-        {" "}
-        SKILLS
-      </h1>
+    <div className={styles.container} data-aos="fade-left">
+      <h1 className={styles.header}> SKILLS</h1>
       <div className={styles.imgsContainer}>
         <div className={styles.cardContainer}>
           <img

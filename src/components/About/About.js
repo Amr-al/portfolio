@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { styles } from "./aboutStyles";
-
+import Aos from "aos";
+import "aos/dist/aos.css";
 export default function About() {
+  useEffect(() => {
+    Aos.init({
+      duration: 2000,
+      delay: 0,
+    });
+  }, []);
   return (
-    <div className={styles.aboutContainer}>
+    <div className={styles.aboutContainer}  data-aos="fade-right">
       <div className={styles.imageContainer}>
         <img
           src="https://res.cloudinary.com/dbymvhk8x/image/upload/v1703945042/4_6_cyf3ad.jpg"
