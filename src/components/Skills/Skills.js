@@ -10,9 +10,15 @@ export default function Skills() {
     });
   }, []);
   return (
-    <div className={styles.container}  id="skills">
-      <h1 className={styles.header}> SKILLS</h1>
-      <div className={styles.imgsContainer} data-aos="fade-left">
+    <div className={styles.container} id="skills">
+      <h1 className={styles.header}> Skills&Experience</h1>
+      <h1 className={styles.description}>
+        As a full stack developer, I specialize in building dynamic and scalable
+        websites using the latest technologies like React.js, Node.js, Express,
+        MongoDB, and ORM tools. With a strong foundation in both front end and
+        back end development
+      </h1>
+      <div className={styles.imgsContainer} data-aos="fade-left" >
         <div className={styles.cardContainer}>
           <img
             src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"
@@ -20,7 +26,7 @@ export default function Skills() {
           />
           <h1 className={styles.name}>React Js</h1>
         </div>
-        <div className="flex flex-col justify-center text-center mb-11 min-min-h-1/4 w-80 items-center">
+        <div className={styles.cardContainer}>
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
             className={styles.singleImage}
