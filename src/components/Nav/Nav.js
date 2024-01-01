@@ -3,7 +3,10 @@ import { styles } from "./NavStyles";
 import { Link } from "react-scroll";
 export default function Nav() {
   return (
+    <div >
     <ul className={styles.container}>
+    <li className="md:min-w-11"></li>
+
       <li className={styles.links}>
         <Link to="about" smooth={true} offset={10} duration={1000}>
           About
@@ -21,12 +24,19 @@ export default function Nav() {
         </Link>
       </li>
       <li>
-        <Link to="contact" smooth={true} offset={10} duration={1000}>
-          <button type="button" className={styles.contact}>
-            Contact
-          </button>
-        </Link>
+        <button
+          type="button"
+          class={styles.contact}
+          onClick={() => {
+            window.location =
+              "https://drive.google.com/file/d/1kLa83saZ2qJ21DcbDCWFr50TjfKiIQQp/view?usp=sharing";
+          }}
+        >
+          Resume
+        </button>
       </li>
+      <li className="md:min-w-11"></li>
     </ul>
+    </div>
   );
 }
