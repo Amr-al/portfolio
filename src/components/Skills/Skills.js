@@ -11,7 +11,7 @@ export default function Skills() {
   }, []);
   return (
     <div className={styles.container} id="skills">
-      <h1 className={styles.header}> Skills & Experience</h1>
+      <h1 className={styles.header}> SKILLS & EXPERIENCE</h1>
       <h1 className={styles.description}>
         As a full stack developer, I specialize in building dynamic and scalable
         websites using the latest technologies like React.js, Node.js, Express,
