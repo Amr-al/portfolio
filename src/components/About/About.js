@@ -40,16 +40,11 @@ export default function About() {
               Hire me
             </button>
           </Link>
-          <button
-            type="button"
-            class={styles.resumeBtn}
-            onClick={() => {
-              window.location =
-                "https://drive.google.com/file/d/1kLa83saZ2qJ21DcbDCWFr50TjfKiIQQp/view?usp=sharing";
-            }}
-          >
-            Resume
-          </button>
+          <Link to="skills" smooth={true} offset={10} duration={1000}>
+            <button type="button" class={styles.resumeBtn}>
+              skills
+            </button>
+          </Link>
         </div>
       </div>
     </div>

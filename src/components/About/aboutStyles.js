@@ -7,6 +7,6 @@ exports.styles = {
     aboutHeader:"text-white text-5xl font-semibold font-serif pt-11 md:text-start text-center",
     aboutBody:"text-gray-500 text-wrap mt-5 text-xl font-serif font-medium md:text-start text-center",
     btnsContainer:"flex flex-row md:justify-start justify-center",
-    hireBtn:"font-bold text-3xl bg-gradient-to-r from-cyan-600 to-indigo-800 hover:from-pink-900 hover:to-yellow-500 md:px-9 text-white rounded-xl px-3 py-5 mt-6 transition-all duration-500",
-    resumeBtn:"font-bold ml-4 text-3xl bg-none border-2 border-cyan-600 hover:border-cyan-800 md:px-9 text-white rounded-xl px-3 py-5 mt-6 transition-all duration-500"
+    hireBtn:"font-bold text-3xl bg-gradient-to-r from-cyan-600 to-indigo-800 hover:from-pink-900 hover:to-yellow-500 md:px-8 text-white rounded-xl px-3 py-4 mt-6 transition-all duration-500",
+    resumeBtn:"font-bold ml-4 text-3xl bg-none border-2 border-cyan-600 hover:border-cyan-800 md:px-9 text-white rounded-xl px-3 py-4 mt-6 transition-all duration-500"
 }
