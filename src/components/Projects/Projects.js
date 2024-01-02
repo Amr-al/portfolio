@@ -4,11 +4,11 @@ import "react-multi-carousel/lib/styles.css";
 import { ImArrowUpRight2 } from "react-icons/im";
 import { Link } from "react-router-dom";
 import { styles } from "./projectStyles";
+import { projectStyle } from "../eachProject/projectStyles";
 
 export default function Projects() {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 5,
     },
@@ -27,34 +27,21 @@ export default function Projects() {
   };
   return (
     <div className="h-screen bg-slate-900" id="projects">
-      <div className={styles.header}>
-        PROJECTS
-      </div>
+      <div className={styles.header}>PROJECTS</div>
       <div className="px-7">
         <Carousel
           responsive={responsive}
-          swipeable={false}
-          draggable={false}
           showDots={false}
-          ssr={true} // means to render carousel on server-side.
-          infinite={true}
-          autoPlaySpeed={1000}
-          keyBoardControl={true}
-          customTransition="all .5"
-          transitionDuration={500}
-          containerClass="carousel-container"
-          dotListClass="custom-dot-list-style"
-          itemClass="carousel-item-padding-40-px"
+          infinite={false}
+          draggable={false}
         >
           <div className={styles.imgStyle}>
             <img
               src="https://res.cloudinary.com/dbymvhk8x/image/upload/v1703961560/Screenshot_2023-12-30_203640_qewhot.png"
               className="w-[100%] h-[80%] rounded-3xl"
             />
-            <div className="flex flex-row underline justify-center items-center h-[100%] font-serif font-semibold">
-              <Link to={`/`}>
-                View details
-              </Link>
+            <div className={projectStyle.cardContainer}>
+              <Link to={`/`}>View details</Link>
               <ImArrowUpRight2 />
             </div>
           </div>
@@ -63,10 +50,8 @@ export default function Projects() {
               src="https://res.cloudinary.com/dbymvhk8x/image/upload/v1703961877/bt_zzlk6o.png"
               className="w-[100%] h-[80%] rounded-3xl"
             />
-            <div className="flex flex-row underline justify-center items-center h-[100%] font-serif font-semibold">
-              <Link to={`/`}>
-                View details
-              </Link>
+            <div className={projectStyle.cardContainer}>
+              <Link to={`/`}>View details</Link>
               <ImArrowUpRight2 />
             </div>
           </div>
@@ -75,10 +60,8 @@ export default function Projects() {
               src="https://res.cloudinary.com/dbymvhk8x/image/upload/v1703961560/Screenshot_2023-12-30_203640_qewhot.png"
               className="w-[100%] h-[80%] rounded-3xl"
             />
-            <div className="flex flex-row underline justify-center items-center h-[100%] font-serif font-semibold">
-              <Link to={`/`}>
-                View details
-              </Link>
+            <div className={projectStyle.cardContainer}>
+              <Link to={`/`}>View details</Link>
               <ImArrowUpRight2 />
             </div>
           </div>
