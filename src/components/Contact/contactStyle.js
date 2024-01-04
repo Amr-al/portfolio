@@ -7,7 +7,7 @@ exports.styles = {
   link: "flex flex-row flex-wrap",
   text: "bg-cyan-500 w-14 h-12 p-1 py-2 rounded-lg hover:py-1 hover:bg-cyan-600 ml-4 mt-4 transition-all duration-500",
   description:
-    "text-white pt-6 font-semibold font-serif ml-3 text-sm cursor-pointer h-[100%]",
+    "text-white pt-7 font-semibold font-serif ml-3 text-sm cursor-pointer h-[100%]",
   rightSideContainer:
     "flex flex-col flex-wrap rounded-md shadow-xl mx-auto mt-11 bg-slate-800 w-[90%] md:w-[40%] h-[100%] pt-10",
   input:

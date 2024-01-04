@@ -39,7 +39,10 @@ export default function Project() {
   }, []);
   return (
     <div className="h-fit">
-      <div className={`${homeStyle.homeContainer} md:pt-10 md:pb-32 min-h-screen `} id="home">
+      <div
+        className={`${homeStyle.homeContainer} md:pt-10 md:pb-32 min-h-screen `}
+        id="home"
+      >
         <h1 className={homeStyle.name}>{data?.name}</h1>
         <h1 className={`${homeStyle.title} w-[80%] md:text-2xl `}>
           This page contains the case study of Dopefolio Open-Source Project
@@ -68,11 +71,8 @@ export default function Project() {
             >
               {data?.image?.map((img, key) => {
                 return (
-                  <div className={`${styles.imgStyle} bg-none rounded-3xl`} key={key}>
-                    <img
-                      src={img}
-                      className="w-[100%] h-[100%] min-h-64 rounded-lg"
-                    />
+                  <div className={`${styles.imgStyle}`} key={key}>
+                    <img src={img} className="w-[100%] min-h-full m-auto" />
                   </div>
                 );
               })}

@@ -1,7 +1,7 @@
 exports.styles = {
   header:
     "text-white text-5xl font-semibold font-serif text-center pt-9 mb-16 h-fit",
-  imgStyle: "bg-white min-h-96 w-[95%] m-2 flex flex-col rounded-lg ",
+  imgStyle: "bg-white min-h-64 w-[95%] m-2 flex flex-col rounded-lg ",
   carouselContainer:
     "bg-slate-900 h-fit min-h-screen flex flex-col justify-center flex-wrap",
   cardContainer:
