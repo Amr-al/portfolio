@@ -24,10 +24,10 @@ function App() {
         }
       />
       <Route
-        path="/project"
+        path="/project/:id"
         element={
           <>
-            <Nav />
+            {/* <Nav /> */}
             <Project />
           </>
         }

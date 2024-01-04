@@ -63,7 +63,7 @@ export default function () {
           maxLength={30}
           placeholder="Email"
         />
-        <textarea rows={5} class={styles.textArea} placeholder="Email" />
+        <textarea rows={5} class={styles.textArea} placeholder="message" />
         <button type="button" class={styles.btn}>
           Send
         </button>
