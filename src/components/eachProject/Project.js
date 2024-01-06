@@ -6,6 +6,7 @@ import "react-multi-carousel/lib/styles.css";
 import { styles } from "../Projects/projectStyles";
 import { projectStyle } from "./projectStyles";
 import { useNavigate, useParams } from "react-router-dom";
+import { backendUrl } from "../url";
 export default function Project() {
   const responsive = {
     superLargeDesktop: {
@@ -31,7 +32,7 @@ export default function Project() {
   const id = useParams().id;
   useEffect(() => {
     let getData = async () => {
-      let res = await fetch(`http://127.0.0.1:5000/projects/${1}`);
+      let res = await fetch(`${backendUrl}/projects/${id}`);
       res = await res.json();
       setData(res);
     };
