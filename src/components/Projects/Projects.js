@@ -30,8 +30,9 @@ export default function Projects() {
   useEffect(() => {
     const getData = async () => {
       let res = await fetch(`${backendUrl}/projects`);
-      res = await res.json();
-      setData(res);
+      let result = await res.json();
+      if (res.status == 200) setData(result);
+      console.log(res);
     };
     getData();
   }, []);
@@ -40,13 +41,9 @@ export default function Projects() {
       <div className={styles.header}>PROJECTS</div>
       {data && (
         <div className="px-7">
-          <Carousel
-            responsive={responsive}
-            showDots={false}
-            infinite={true}
-            draggable={false}
-          >
+          <Carousel responsive={responsive} infinite={true}>
             {data?.map((project, key) => {
+              console.log(key);
               return (
                 <div className={styles.imgStyle} key={key}>
                   <img
@@ -60,36 +57,6 @@ export default function Projects() {
                 </div>
               );
             })}
-            {/* <div className={styles.imgStyle}>
-              <img
-                src="https://res.cloudinary.com/dbymvhk8x/image/upload/v1703961560/Screenshot_2023-12-30_203640_qewhot.png"
-                className="w-[100%] h-[80%] rounded-3xl"
-              />
-              <div className={projectStyle.cardContainer}>
-                <Link to={`/`}>View details</Link>
-                <ImArrowUpRight2 />
-              </div>
-            </div>
-            <div className={styles.imgStyle}>
-              <img
-                src="https://res.cloudinary.com/dbymvhk8x/image/upload/v1703961877/bt_zzlk6o.png"
-                className="w-[100%] h-[80%] rounded-3xl"
-              />
-              <div className={projectStyle.cardContainer}>
-                <Link to={`/`}>View details</Link>
-                <ImArrowUpRight2 />
-              </div>
-            </div>
-            <div className={styles.imgStyle}>
-              <img
-                src="https://res.cloudinary.com/dbymvhk8x/image/upload/v1704298750/Portfolio/m8xlxcjzqktjog9wn2ge.png"
-                className="w-[100%] min-h-[100%] rounded-3xl"
-              />
-              <div className={projectStyle.cardContainer}>
-                <Link to={`/`}>View details</Link>
-                <ImArrowUpRight2 />
-              </div>
-            </div> */}
           </Carousel>
         </div>
       )}
